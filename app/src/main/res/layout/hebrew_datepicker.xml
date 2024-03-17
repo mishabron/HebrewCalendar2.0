@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/parent"
+     android:orientation="horizontal"
+     android:layout_gravity="center_horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <!-- Year-->
+	<com.mbronshteyn.android.custom.ui.NumberPicker
+         android:layout_height="wrap_content"
+         android:layout_width="76dp"         
+         android:layout_marginLeft="1dp"
+         android:layout_marginRight="1dp"
+         android:focusable="true"
+         android:focusableInTouchMode="true"                  
+         android:id="@+id/hyear" 
+         android:layout_toLeftOf="@+id/hmonth"/>
+
+     <!-- Month -->
+     <com.mbronshteyn.android.custom.ui.NumberPicker
+         android:layout_height="wrap_content"
+         android:layout_width="134dp"         
+         android:layout_marginLeft="1dp"
+         android:layout_marginRight="1dp"
+         android:focusable="true"
+		 android:textSize="18sp"         
+         android:focusableInTouchMode="true" 
+         android:id="@+id/hmonth" 
+         android:layout_centerInParent="true"/>
+     
+     <!-- Day -->
+     <com.mbronshteyn.android.custom.ui.NumberPicker
+         android:layout_height="wrap_content"
+         android:layout_width="76dp"         
+         android:layout_marginLeft="1dp"
+         android:layout_marginRight="1dp"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:id="@+id/hday"        
+         android:layout_toRightOf="@+id/hmonth"/>
+      
+</RelativeLayout>

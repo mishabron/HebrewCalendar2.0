@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="ROSH_HASHANA">Rosh Hashana</string>
+	<string name="YOM_KIPPUR">Yom Kippur</string>
+	<string name="SUKKOT">Sukkot</string>
+	<string name="SHEMINI_ATZERET">Shemini Atzeret</string>
+	<string name="SIMCHA_TORAH">Simcha Torah</string>
+	<string name="CHANUKAH">Chanukah</string>
+	<string name="TUBSHEVAT">Tu B&#8217;Shevat</string>
+	<string name="PURIM">Purim</string>			
+	<string name="PESACH">Pesach</string>
+	<string name="OMER">Omer</string>
+	<string name="LAG_BAOMER">Lag BaOmer</string>
+	<string name="SHAVUOT">Shavuout</string> 
+	<string name="TISHA_BAV">Tisha B&#8217;Av</string>
+	<string name="YAHRZEIT">Yahrzeit</string>
+	<string name="SHABATH">Shabath</string> 
+	<string name="OTHER">Other</string> 
+	<string name="BIRTHDAY">Birthday</string> 
+	<string name="ANNIVERSARY">Wedding Anniversary</string> 
+	<string name="ROSH_HODESH">Rosh Hodesh</string> 
+	<string name="CANDLELIGHTING_TIME">Candle Lighting Time</string> 
+	<string name="SHABBOS_YOMTOV_END">Shabbat/Yom Tov End</string>
+	<string name="TEVETH_10">Fast of Tevet 10</string>
+	<string name="TAMUZ_17">Fast of Tammuz 17</string> 		 		 	
+</resources>

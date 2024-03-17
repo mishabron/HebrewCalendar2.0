@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TISHREI">Tishrei</string>
+    <string name="CHESHVAN">Cheshvan</string>
+    <string name="KISLEV">Kislev</string> 
+    <string name="TEVETH">Teveth</string>
+    <string name="SHEVAT">Shevat</string>
+    <string name="ADAR">Adar</string> 
+    <string name="ADAR_I">Adar I</string>
+    <string name="ADAR_II">Adar II</string>
+    <string name="NISAN">Nisan</string>
+    <string name="IYAR">Iyar</string> 
+    <string name="SIVAN">Sivan</string> 
+    <string name="TAMMUZ">Tammuz</string>
+    <string name="AV">Av</string> 
+    <string name="ELUL">Elul</string>     
+</resources>

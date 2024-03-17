@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="beforeSunsetLabels">
+        <item>0  Minutes</item>
+        <item>18 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+        <item>40 Minutes</item>
+    </string-array>
+
+    <string-array name="beforeSunsetLabelValues">
+        <item>0</item>
+        <item>18</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+    <string-array name="afterSunsetLabels">
+        <item>0  Minutes</item>
+        <item>5  Minutes</item>
+        <item>16 Minutes</item>>
+    </string-array>
+
+    <string-array name="afterSunsetLabelValues">
+        <item>0</item>
+        <item>5</item>
+        <item>16</item>
+    </string-array>
+        
+</resources>

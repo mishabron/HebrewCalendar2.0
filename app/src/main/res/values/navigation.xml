@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>   
+    <string-array name="nav_drawer_items">
+        <item>Hebrew Events</item>        
+        <item>Hebrew Calendar</item>
+		<item>Date Converter</item>  	
+    </string-array>
+    <string-array name="nav_drawer_icons">  
+        <item>@drawable/list</item>  
+        <item>@drawable/schedule</item>  
+        <item>@drawable/quick_restart</item>        
+    </string-array>    
+</resources> 

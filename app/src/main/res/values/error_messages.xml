@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invalid_year_title">Invalid Hebrew Year</string>
+    <string name="minimum_hebrew_year">Minimum Hebrew Year is</string>
+    <string name="maximum_hebrew_year">Maximum Hebrew Year is</string>
+    <string name="networkservice_notavailable">Network Service is not available</string> 
+    <string name="system_error">System Error</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="EVENT_ROSH_HASHANA_DAY1">Rosh Hashana first day</string>
+	<string name="EVENT_ROSH_HASHANA_DAY2">Rosh Hashana second day</string>	
+	<string name="EVENT_YOM_KIPPUR">Yom Kippur</string>
+	<string name="EVENT_SUKKOT_DAY1">Sukkot day 1</string>
+	<string name="EVENT_SUKKOT_DAY2">Sukkot day 2</string>
+	<string name="EVENT_SUKKOT_DAY3">Sukkot day 3</string>
+	<string name="EVENT_SUKKOT_DAY4">Sukkot day 4</string>
+	<string name="EVENT_SUKKOT_DAY5">Sukkot day 5</string>
+	<string name="EVENT_SUKKOT_DAY6">Sukkot day 6</string>
+	<string name="EVENT_SUKKOT_DAY7">Sukkot Hoshana Rabbah</string>	
+	<string name="EVENT_SHEMINI_ATZERET">Shemini Atzeret</string>
+	<string name="EVENT_SIMCHA_TORAH">Simcha Torah</string>
+	<string name="EVENT_CHANUKAH_DAY1">Chanukah day 1</string>
+	<string name="EVENT_CHANUKAH_DAY2">Chanukah day 2</string>
+	<string name="EVENT_CHANUKAH_DAY3">Chanukah day 3</string>
+	<string name="EVENT_CHANUKAH_DAY4">Chanukah day 4</string>
+	<string name="EVENT_CHANUKAH_DAY5">Chanukah day 5</string>
+	<string name="EVENT_CHANUKAH_DAY6">Chanukah day 6</string>
+	<string name="EVENT_CHANUKAH_DAY7">Chanukah day 7</string>
+	<string name="EVENT_CHANUKAH_DAY8">Chanukah day 8</string>	
+	<string name="EVENT_TUBSHEVAT">Tu B&#8217;Shevat</string>
+	<string name="EVENT_PURIM">Purim</string>			
+	<string name="EVENT_PESACH_DAY1">Pesach day 1</string>
+	<string name="EVENT_PESACH_DAY2">Pesach day 2</string>
+	<string name="EVENT_PESACH_DAY3">Pesach day 3</string>
+	<string name="EVENT_PESACH_DAY4">Pesach day 4</string>
+	<string name="EVENT_PESACH_DAY5">Pesach day 5</string>
+	<string name="EVENT_PESACH_DAY6">Pesach day 6</string>
+	<string name="EVENT_PESACH_DAY7">Pesach day 7</string>
+	<string name="EVENT_PESACH_DAY8">Pesach last day</string>							
+	<string name="EVENT_OMER">Omer 1 day</string>
+	<string name="EVENT_LAG_BAOMER">Lag BaOmer</string>
+	<string name="EVENT_EVENT_SHAVUOT_DAY1">Shavuout first day</string> 
+	<string name="EVENT_EVENT_SHAVUOT_DAY2">Shavuout second day</string>
+	<string name="EVENT_TAMUZ_17">Fast of Tammuz 17</string>
+	<string name="EVENT_TEVETH_10">Fast of Tevet 10</string>			 	
+	<string name="EVENT_TISHA_BAV">Tisha B&#8217;Av</string>
+	<string name="EVENT_YAHRZEIT">Yahrzeit</string>
+	<string name="EVENT_SHABATH">Shabath</string> 
+	<string name="EVENT_ROSH_HODESH">Rosh Hodesh</string> 	
+</resources>

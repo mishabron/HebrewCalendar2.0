@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+	<event name="ROSH_HASHANA" month="TISHREI" day="1" image="shofar" shabbos="true" start_year="0" description="EVENT_ROSH_HASHANA_DAY1"/> 
+	<event name="ROSH_HASHANA" month="TISHREI" day="2" image="shofar" shabbos="true" start_year="0" description="EVENT_ROSH_HASHANA_DAY2"/>	
+	<event name="YOM_KIPPUR" month="TISHREI" day="10" image="scales" shabbos="1" start_year="0" description="EVENT_YOM_KIPPUR"/> 
+	<event name="SUKKOT" month="TISHREI" day="15" image="sukkot" shabbos="1" start_year="0" description="EVENT_SUKKOT_DAY1"/>
+	<event name="SUKKOT" month="TISHREI" day="16" image="sukkot" shabbos="1" start_year="0" description="EVENT_SUKKOT_DAY2"/>
+	<event name="SUKKOT" month="TISHREI" day="17" image="sukkot" shabbos="0" start_year="0" description="EVENT_SUKKOT_DAY3"/>
+	<event name="SUKKOT" month="TISHREI" day="18" image="sukkot" shabbos="0" start_year="0" description="EVENT_SUKKOT_DAY4"/>
+	<event name="SUKKOT" month="TISHREI" day="19" image="sukkot" shabbos="0" start_year="0" description="EVENT_SUKKOT_DAY5"/>
+	<event name="SUKKOT" month="TISHREI" day="20" image="sukkot" shabbos="0" start_year="0" description="EVENT_SUKKOT_DAY6"/>
+	<event name="SUKKOT" month="TISHREI" day="21" image="sukkot" shabbos="0" start_year="0" description="EVENT_SUKKOT_DAY7"/>
+	<event name="SHEMINI_ATZERET" month="TISHREI" day="22" image="torah" shabbos="1" start_year="0" description="EVENT_SHEMINI_ATZERET"/>
+	<event name="SIMCHA_TORAH" month="TISHREI" day="23" image="torah" shabbos="1" start_year="0" description="EVENT_SIMCHA_TORAH"/>
+	<event name="CHANUKAH" month="KISLEV" day="25" image="one" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY1"/>
+	<event name="CHANUKAH" month="KISLEV" day="26" image="two" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY2"/>
+	<event name="CHANUKAH" month="KISLEV" day="27" image="three" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY3"/>
+	<event name="CHANUKAH" month="KISLEV" day="28" image="four" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY4"/>
+	<event name="CHANUKAH" month="KISLEV" day="29" image="five" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY5"/>	
+	<event name="CHANUKAH" month="KISLEV" day="30" image="six" shabbos="0" start_year="0" description="EVENT_CHANUKAH_DAY6"/>
+	<event name="CHANUKAH" month="TEVETH" day="1" image="six" shabbos="0" start_year="0" notif="KISLEV,30" description="EVENT_CHANUKAH_DAY6"/>	
+	<event name="CHANUKAH" month="TEVETH" day="1" image="seven" shabbos="0" start_year="0" onlyif="KISLEV,30" description="EVENT_CHANUKAH_DAY7"/>
+	<event name="CHANUKAH" month="TEVETH" day="2" image="seven" shabbos="0" start_year="0" notif="KISLEV,30" description="EVENT_CHANUKAH_DAY7"/>	
+	<event name="CHANUKAH" month="TEVETH" day="2" image="eight" shabbos="0" start_year="0" onlyif="KISLEV,30" description="EVENT_CHANUKAH_DAY8"/>
+	<event name="CHANUKAH" month="TEVETH" day="3" image="eight" shabbos="0" start_year="0" notif="KISLEV,30" description="EVENT_CHANUKAH_DAY8"/>
+	<event name="TEVETH_10" month="TEVETH" day="10" image="temple" shabbos="0" start_year="0" description="EVENT_TEVETH_10"/>			
+	<event name="TUBSHEVAT" month="SHEVAT" day="15" image="fruits" shabbos="0" start_year="0" description="EVENT_TUBSHEVAT"/>							
+	<event name="PURIM" month="ADAR" day="14" image="purim" shabbos="0" start_year="0" description="EVENT_PURIM"/>		
+	<event name="PURIM" month="ADAR_II" day="14" image="purim" shabbos="0" start_year="0" description="EVENT_PURIM"/>		
+	<event name="PESACH" month="NISAN" day="15" image="matzah" shabbos="1" start_year="0" description="EVENT_PESACH_DAY1"/>
+	<event name="PESACH" month="NISAN" day="16" image="matzah" shabbos="1" start_year="0" description="EVENT_PESACH_DAY2"/>
+	<event name="PESACH" month="NISAN" day="17" image="matzah" shabbos="0" start_year="0" description="EVENT_PESACH_DAY3"/>
+	<event name="PESACH" month="NISAN" day="18" image="matzah" shabbos="0" start_year="0" description="EVENT_PESACH_DAY4"/>
+	<event name="PESACH" month="NISAN" day="19" image="matzah" shabbos="0" start_year="0" description="EVENT_PESACH_DAY5"/>
+	<event name="PESACH" month="NISAN" day="20" image="matzah" shabbos="0" start_year="0" description="EVENT_PESACH_DAY6"/>
+	<event name="PESACH" month="NISAN" day="21" image="matzah" shabbos="1" start_year="0" description="EVENT_PESACH_DAY7"/>
+	<event name="PESACH" month="NISAN" day="22" image="matzah" shabbos="1" start_year="0" description="EVENT_PESACH_DAY8"/>						
+	<event name="OMER" month="NISAN" day="16" image="omer" shabbos="0" start_year="0" description="EVENT_OMER"/>
+	<event name="LAG_BAOMER" month="IYAR" day="18" image="lagbaomer" shabbos="0" start_year="0" description="EVENT_LAG_BAOMER"/>
+	<event name="SHAVUOT" month="SIVAN" day="6" image="luchos" shabbos="1" start_year="0" description="EVENT_EVENT_SHAVUOT_DAY1"/>
+	<event name="SHAVUOT" month="SIVAN" day="7" image="luchos" shabbos="1" start_year="0" description="EVENT_EVENT_SHAVUOT_DAY2"/>
+	<event name="TAMUZ_17" month="TAMMUZ" day="17" image="temple" shabbos="0" start_year="0" description="EVENT_TAMUZ_17"/>	
+	<event name="TISHA_BAV" month="AV" day="9" image="temple" shabbos="0" start_year="0" description="EVENT_TISHA_BAV"/>	
+</events>

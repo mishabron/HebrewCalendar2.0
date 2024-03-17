@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="address_settings_header">Address Location</string>
+    <string name="address_settings_title">Location</string>    
+    <string name="address_dialog_title">Address Location</string>
+    <string name="address_settings_summary">Set City State Country or ZIP/Postal Code</string> 
+    <string name="address_dialog_message">Note: it is very important to have accuratre location in order to calculate proper candle lighting times.
+        								  \n\nPlease enter any combination of City, State, Countr or ZIP/Postal Code</string>  
+   	<string name="geo_settings_header">Geographic Location</string>
+    <string name="geo_settings_title">Geographic coordinates</string>
+    <string name="geo_settings_summary">Set Latitude and Longitude\nGMT Time Zone</string> 
+    
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>  
+    <string name="uctGmt">UTC/GMT: </string>  
+    
+    <string name="addressName">Address Name</string>
+        
+    <string name="set_location_button">Use Location</string>         
+    <string name="set_location_button_message">Network Service needs to be enabled</string>  
+    <string name="set_gps_button">Use Last Known GPS Location</string>         
+    <string name="set_gps_button_message">GPS and Network Services need to be enabled\nTo update GSP coordinates, please use your Google Maps</string> 
+    <string name="gmt_message">To get proper GMT, please reset your coordinates after Daylight saving time has changed</string>     
+        
+    <string name="before_after_title">Minutes before/after sunset</string>    
+    <string name="beforeSunset">Minutes before sunset</string>
+    <string name="beforeSunset_summary">Select minutes before sunset</string>  
+      
+    <string name="afterSunset">Minutes after sunset</string>
+    <string name="afterSunset_summary">Select minutes after sunset</string>        
+        
+</resources>    

@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory 
+        android:title="@string/address_settings_header"
+        android:key="location">
+        
+        <EditTextPreference
+            android:key="address_location"
+            android:defaultValue="" 
+            android:title="@string/address_settings_title"
+            android:dialogTitle="@string/address_dialog_title" 
+            android:summary="@string/address_settings_summary"
+            android:dialogMessage="@string/address_dialog_message"/>
+        
+	</PreferenceCategory>
+	
+    <PreferenceCategory 
+        android:title="@string/geo_settings_header"
+        android:key="coordinates">                
+		<com.mbronshteyn.android.calendar.hebrew.activity.preference.GeoPreferences
+	            android:key="geoPreferences"
+	            android:title="@string/geo_settings_title"
+	            android:summary="@string/geo_settings_summary"
+	            android:positiveButtonText="@string/set_button"
+	            android:negativeButtonText="@string/cancel_Button"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/before_after_title">
+        <ListPreference
+            android:title="@string/beforeSunset"
+            android:key="beforeSunset"
+            android:defaultValue="18"
+            android:entries="@array/beforeSunsetLabels"
+            android:summary="@string/beforeSunset_summary"            
+            android:entryValues="@array/beforeSunsetLabelValues" />
+        
+        <ListPreference
+            android:title="@string/afterSunset"
+            android:key="afterSunset"
+            android:defaultValue="0"
+            android:entries="@array/afterSunsetLabels"
+            android:summary="@string/afterSunset_summary"            
+            android:entryValues="@array/afterSunsetLabelValues" />
+        
+        
+                
+    </PreferenceCategory>    
+    
+</PreferenceScreen>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="320dip"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">  
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+		<Button
+		    android:id="@+id/reverseButton"
+		    android:layout_alignParentRight="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/reverse_button"/>
+		
+		<Button
+			android:id="@+id/dateButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+			android:text="Button"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp"		
+			android:background="@drawable/button_box"/>		
+
+	</RelativeLayout>
+	        
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/cellpopupitem_gradient"
+	    android:padding="2dip">
+	    <ImageView
+	        android:id="@+id/icon"
+	       	android:layout_width="48dp"
+	       	android:layout_height="36dp"
+	       	android:layout_margin="4dp"        
+			android:padding="2dp"
+		    android:gravity="center"
+		    android:scaleType="fitCenter"
+		    android:background="@drawable/eventimage_shape"/>	    
+	    <TextView
+	     	android:id="@+id/eventName"
+	        android:layout_width="fill_parent"
+			android:layout_height="30dip"            
+			android:layout_weight="4"
+	        android:gravity="center_vertical"
+	        android:text="My Application"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#ffcc00"
+	        android:ellipsize="marquee"
+	        android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:singleLine="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:scrollHorizontally="true"
+			android:fadingEdge="horizontal"
+			android:fadingEdgeLength="10dp"/>        	
+	</LinearLayout>
+	<EditText 
+	    android:id="@+id/eventDescription"  
+	    android:layout_height="wrap_content"	        
+	    android:layout_width="fill_parent"
+	    android:hint="@string/eventDescription"  
+	    android:inputType="textPersonName|textMultiLine"
+		android:lines="2"
+		android:singleLine="false"
+		android:gravity="top|left">  
+	</EditText>
+	<LinearLayout 	android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="#ff545454"
+					android:orientation="horizontal">           
+					<Button android:id="@+id/cancel_button" 
+				        	android:layout_width="wrap_content"
+				        	android:layout_height="wrap_content" 
+						    android:drawableLeft="@drawable/close"
+							android:drawablePadding="1dip"							    
+							android:text="@string/cancel_Button"				    			        	
+				        	android:layout_marginTop="10dip"	        	
+				        	android:layout_marginBottom="10dip"
+							android:layout_weight="1"
+							android:gravity="center_vertical|center_horizontal"
+							android:layout_gravity="center_vertical|center_horizontal|left"/>
+				   <Button
+				   			android:id="@+id/update_button"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+		       				android:drawableLeft="@drawable/button_update"
+							android:drawablePadding="1dip"			       				
+							android:text="@string/update_Button"								
+				        	android:layout_marginTop="10dip"
+				        	android:layout_marginBottom="10dip"
+							android:layout_weight="1"
+							android:gravity="center_vertical|center_horizontal"
+							android:layout_gravity="center_vertical|center_horizontal|left"/>
+				   <Button
+				   			android:id="@+id/delete_button"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+		       				android:drawableLeft="@drawable/button_delete"
+							android:drawablePadding="1dip"			       				
+							android:text="@string/delete_Button"								
+				        	android:layout_marginTop="10dip"
+				        	android:layout_marginBottom="10dip"
+							android:layout_weight="1"
+							android:gravity="center_vertical|center_horizontal"
+							android:layout_gravity="center_vertical|center_horizontal|left"/>								
+		        	  
+    </LinearLayout>	
+</LinearLayout>
