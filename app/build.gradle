@@ -9,8 +9,8 @@ android {
         applicationId "com.mbronshteyn.android.calendar.hebrew"
         minSdkVersion 31
         targetSdkVersion 36
-        versionCode 1601
-        versionName '16.0.1'
+        versionCode 1610
+        versionName '16.0.10'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,6 +39,10 @@ android {
     }
 
     namespace 'com.mbronshteyn.android.calendar.hebrew'
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {

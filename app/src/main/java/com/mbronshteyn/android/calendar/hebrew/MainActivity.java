@@ -1,17 +1,23 @@
 package com.mbronshteyn.android.calendar.hebrew;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentActivity;
 
+import com.mbronshteyn.android.calendar.hebrew.databinding.ActivityMainBinding;
 import com.mbronshteyn.android.calendar.hebrew.fragment.DateConversionFragment;
 import com.mbronshteyn.android.calendar.hebrew.fragment.HebrewCalendarFragment;
 import com.mbronshteyn.android.calendar.hebrew.fragment.HebrewEventsFragment;
@@ -23,7 +29,7 @@ import com.mbronshteyn.calendar.hebrew.data.HebrewMonth;
 
 import java.lang.reflect.Method;
 
-public class MainActivity extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public class MainActivity extends FragmentActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
 	/**
 	 * Fragment managing the behaviors, interactions and presentation of the
@@ -37,12 +43,35 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 	private DateConversionFragment dateConversionFragment;
 
 	private RequestPermissionHandler mRequestPermissionHandler;
+	private ActivityMainBinding binding;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		EdgeToEdge.enable(this);
+		//WindowCompat.enableEdgeToEdge(getWindow());
+		binding = ActivityMainBinding.inflate(getLayoutInflater());
+		setContentView(binding.getRoot());
+
+		ViewCompat.setOnApplyWindowInsetsListener(binding.drawerLayout, (v, windowInsets) -> {
+			Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+			// Apply the insets as a margin to the view. This solution sets only the
+			// bottom, left, and right dimensions, but you can apply whichever insets are
+			// appropriate to your layout. You can also update the view padding if that's
+			// more appropriate.
+			ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+
+			mlp.topMargin = insets.top;
+			mlp.leftMargin = insets.left;
+			mlp.bottomMargin = insets.bottom;
+			mlp.rightMargin = insets.right;
+			v.setLayoutParams(mlp);
+
+			// Return CONSUMED if you don't want the window insets to keep passing
+			// down to descendant views.
+			return WindowInsetsCompat.CONSUMED;
+		});
 
 		context = this;
 
