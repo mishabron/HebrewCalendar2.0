@@ -617,10 +617,12 @@ public class HebrewCalendarFragment extends Fragment {
 					description = (String) context.getText(R.string.yomtov_ends);
 					image = "havdalah_theme";
 				}
-				String date = candlesTime.format(hDate.getShabbosEnd());
-				description = description + " " + date;
-				HebrewCalendarEvent shabbosYomtom = new HebrewCalendarEvent(HebrewEvent.SHABBOS_END, description, image, hDate, false);
-				dayEvents.add(0,shabbosYomtom);
+				if(hDate.getShabbosEnd() != null) {
+					String date = candlesTime.format(hDate.getShabbosEnd());
+					description = description + " " + date;
+					HebrewCalendarEvent shabbosYomtom = new HebrewCalendarEvent(HebrewEvent.SHABBOS_END, description, image, hDate, false);
+					dayEvents.add(0,shabbosYomtom);
+				}
 			}
 
 		}

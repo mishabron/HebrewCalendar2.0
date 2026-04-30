@@ -5,7 +5,6 @@ android {
 
     defaultConfig {
         minSdkVersion 31
-        targetSdkVersion 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -22,6 +21,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.mbronshteyn.calendar.hebrew'
+    lint {
+        targetSdk 33
+    }
+    testOptions {
+        targetSdk 33
+    }
 }
 
 dependencies {

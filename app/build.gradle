@@ -3,14 +3,14 @@ apply plugin: 'com.android.application'
 android {
 
 
-    compileSdkVersion 33
+    compileSdkVersion 36
 
     defaultConfig {
         applicationId "com.mbronshteyn.android.calendar.hebrew"
         minSdkVersion 31
-        targetSdkVersion 33
-        versionCode 1202
-        versionName '12.0.2'
+        targetSdkVersion 36
+        versionCode 1601
+        versionName '16.0.1'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -68,4 +68,13 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     // To use constraintlayout in compose
     implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+
+    implementation("androidx.activity:activity:1.8.1") // or newer
+
+    // For Jetpack Compose
+    implementation("androidx.activity:activity-compose:1.9.0") // or newer
+
+    // For older XML projects using AppCompat or requiring WindowCompat
+    implementation("androidx.core:core:1.17.0") // or newer beta/alpha if needed
+
 }

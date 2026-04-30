@@ -47,8 +47,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 		context = this;
 
 		mRequestPermissionHandler = new RequestPermissionHandler();
-		mRequestPermissionHandler.requestPermission(this, new String[] { Manifest.permission.READ_CALENDAR, Manifest.permission.WRITE_CALENDAR,
-				Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION }, 123,
+		mRequestPermissionHandler.requestPermission(this, new String[] { Manifest.permission.READ_CALENDAR, Manifest.permission.WRITE_CALENDAR, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION }, 123,
 				new RequestPermissionHandler.RequestPermissionListener() {
 					@Override
 					public void onSuccess() {

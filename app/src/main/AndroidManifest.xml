@@ -18,7 +18,8 @@
     <application
         android:backupAgent=".util.BackupHelperAgent"
         android:icon="@drawable/calendar"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:supportsRtl="true">
         <activity
             android:name=".activity.preference.SettingsActivity"
             android:label="@string/app_name"

@@ -11,10 +11,27 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1202,
-      "versionName": "12.0.2",
-      "outputFile": "HebrewAndroidCalendar-12.0.2.apk"
+      "versionCode": 1601,
+      "versionName": "16.0.1",
+      "outputFile": "HebrewAndroidCalendar-16.0.1.apk"
     }
   ],
-  "elementType": "File"
+  "elementType": "File",
+  "baselineProfiles": [
+    {
+      "minApi": 28,
+      "maxApi": 30,
+      "baselineProfiles": [
+        "baselineProfiles/1/HebrewAndroidCalendar-16.0.1.dm"
+      ]
+    },
+    {
+      "minApi": 31,
+      "maxApi": 2147483647,
+      "baselineProfiles": [
+        "baselineProfiles/0/HebrewAndroidCalendar-16.0.1.dm"
+      ]
+    }
+  ],
+  "minSdkVersionForDexing": 31
 }
