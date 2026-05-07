@@ -35,5 +35,12 @@
         <item>@string/days2</item>  
         <item>@string/days3</item>
         <item>@string/week1</item>         
-    </string-array>     
+    </string-array>
+    <string-array name="years">
+        <item>@string/currentYear</item>
+        <item>@string/Years2</item>
+        <item>@string/Years3</item>
+        <item>@string/Years4</item>
+        <item>@string/Years5</item>
+    </string-array>
 </resources> 

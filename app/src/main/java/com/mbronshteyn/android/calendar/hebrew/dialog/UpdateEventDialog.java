@@ -84,6 +84,10 @@ public class UpdateEventDialog extends DialogFragment {
 		void onUpdate();
 	}
 
+	public UpdateEventDialog() {
+
+	}
+
 	public UpdateEventDialog(OnEventUpdateListener callBack, HebrewCalendarEvent hEvent) {
 
 		// super(context,R.style.PauseDialog);

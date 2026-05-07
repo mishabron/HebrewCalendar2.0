@@ -12,5 +12,10 @@
     <string name="day1">1 day</string>
     <string name="days2">2 days</string>
     <string name="days3">3 days</string> 
-    <string name="week1">one week</string>     
+    <string name="week1">one week</string>
+    <string name="currentYear">This Year</string>
+    <string name="Years2">2 Years</string>
+    <string name="Years3">3 Years</string>
+    <string name="Years4">4 Years</string>
+    <string name="Years5">5 Years</string>
 </resources>

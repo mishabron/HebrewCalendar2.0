@@ -9,8 +9,8 @@ android {
         applicationId "com.mbronshteyn.android.calendar.hebrew"
         minSdkVersion 31
         targetSdkVersion 36
-        versionCode 1610
-        versionName '16.0.10'
+        versionCode 1611
+        versionName '16.0.11'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -69,9 +69,11 @@ dependencies {
         exclude group: 'org.apache.httpcomponents'
     }
 
-    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation "androidx.constraintlayout:constraintlayout:2.2.1"
     // To use constraintlayout in compose
-    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.1"
+
+    //implementation libs.constraintlayout
 
     implementation("androidx.activity:activity:1.8.1") // or newer
 
@@ -80,5 +82,7 @@ dependencies {
 
     // For older XML projects using AppCompat or requiring WindowCompat
     implementation("androidx.core:core:1.17.0") // or newer beta/alpha if needed
+
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
 }

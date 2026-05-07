@@ -38,4 +38,21 @@
 	    android:scaleType="fitCenter"> 
 	</Spinner>
 
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/numberOfYears"
+		android:textSize="16sp" />
+	<Spinner
+		android:id="@+id/yearsAhead"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:prompt="@string/numberOfYears"
+		android:entries="@array/years"
+		android:padding="8sp"
+		android:gravity="center"
+		android:scaleType="fitCenter">
+	</Spinner>
+
 </LinearLayout>

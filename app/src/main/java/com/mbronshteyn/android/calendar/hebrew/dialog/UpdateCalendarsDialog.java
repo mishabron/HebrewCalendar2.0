@@ -1,10 +1,5 @@
 package com.mbronshteyn.android.calendar.hebrew.dialog;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -18,6 +13,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.mbronshteyn.android.calendar.hebrew.R;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class UpdateCalendarsDialog extends AlertDialog{
 
@@ -33,7 +33,7 @@ public class UpdateCalendarsDialog extends AlertDialog{
      */
     public interface OnUpdateButtonClickListener {
 
-        void onClick(int calendarId, int minutes);
+        void onClick(int calendarId, int minutes, int yearsAhead);
 
     }
     
@@ -73,9 +73,13 @@ public class UpdateCalendarsDialog extends AlertDialog{
 							//get reminder minutes
 							Spinner reminderSpinner = (Spinner) findViewById(R.id.notofications);
 							View reminderRow  = reminderSpinner.getSelectedView();
-							TextView minutes=(TextView)reminderRow.findViewById(R.id.notifyValue);							
+							TextView minutes=(TextView)reminderRow.findViewById(R.id.notifyValue);
+
+							//get years ahead
+							Spinner yearsAheadSpinner = (Spinner) findViewById(R.id.yearsAhead);
+							int yearsAhead  = yearsAheadSpinner.getSelectedItemPosition();
 							
-							callBack.onClick(Integer.parseInt(id.getText().toString()),Integer.parseInt(minutes.getText().toString()));
+							callBack.onClick(Integer.parseInt(id.getText().toString()),Integer.parseInt(minutes.getText().toString()),yearsAhead);
 						}
 					}
 				});

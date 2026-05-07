@@ -48,6 +48,7 @@
     <string name="dataRestore_failed">Restore Failed</string>
     <string name="chooseCalendar">Choose Calendar</string>
     <string name="notification">Reminders</string>
+    <string name="numberOfYears">Number Of Years Ahead</string>
     <string name="updateCalendar_Button">Update</string>
     <string name="selectCalendar">Select Calendar</string>
     <string name="setReminder">Reminders</string>

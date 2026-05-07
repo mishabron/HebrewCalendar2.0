@@ -1,13 +1,5 @@
 package com.mbronshteyn.android.calendar.hebrew.util;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TimeZone;
-
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -23,6 +15,14 @@ import com.mbronshteyn.calendar.hebrew.DateConverter;
 import com.mbronshteyn.calendar.hebrew.HebrewDate;
 import com.mbronshteyn.calendar.hebrew.data.HebrewEvent;
 import com.mbronshteyn.calendar.hebrew.data.HebrewMonth;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TimeZone;
 
 public class HebrewCalendarUtils {
 
@@ -208,7 +208,7 @@ public class HebrewCalendarUtils {
 		return myCalendars;
 	}
 
-	public static void updateCalendar(ContentResolver cr, Context context, int calId, ArrayList<HebrewCalendarEvent> events, int reminderMinutes) {
+	public static void updateCalendar(ContentResolver cr, Context context, int calId, ArrayList<HebrewCalendarEvent> events, int reminderMinutes, int forYears) {
 
 		Calendar calendar = new GregorianCalendar();
 
@@ -256,7 +256,9 @@ public class HebrewCalendarUtils {
 						description = getMonthName(context, newhDate.getHebrewMonth()) + " " + newhDate.getDay();
 					}
 				} else {
-					insertIvent(calendarBase, cr, calId, title, description, hEvent.getGrDate(), reminderMinutes);
+					for (int nextYear = 0; nextYear <= forYears; nextYear++) {
+						insertIvent(calendarBase, cr, calId, title, description, hEvent.getGrDateNextYear(nextYear), reminderMinutes);
+					}
 				}
 			}
 		}

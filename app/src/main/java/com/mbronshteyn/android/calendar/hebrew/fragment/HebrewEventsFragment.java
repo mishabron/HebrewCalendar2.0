@@ -1,11 +1,5 @@
 package com.mbronshteyn.android.calendar.hebrew.fragment;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -49,6 +43,12 @@ import com.mbronshteyn.calendar.hebrew.CalendarUtils;
 import com.mbronshteyn.calendar.hebrew.DateConverter;
 import com.mbronshteyn.calendar.hebrew.data.HebrewEvent;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author misha
  */
@@ -72,6 +72,7 @@ public class HebrewEventsFragment extends ListFragment {
 	private ContentResolver contentResolver;
 	private int calendarId;
 	private int reminderMinutes;
+	private int forYears;
 	private static final int UPDATE_EVENT_DIALOG_ID = 0;
 	private static final int UPDATE_CALENDAR_DIALOG_ID = 1;
 	private static HebrewCalendarEvent hEvent;
@@ -116,10 +117,11 @@ public class HebrewEventsFragment extends ListFragment {
 	private OnUpdateButtonClickListener updateCallBack = new OnUpdateButtonClickListener() {
 
 		@Override
-		public void onClick(int dialogCalendarId, int minutes) {
+		public void onClick(int dialogCalendarId, int minutes, int yearsPlus) {
 
 			calendarId = dialogCalendarId;
 			reminderMinutes = minutes;
+			forYears = yearsPlus;
 			mProgressDialog.showProgressDialog((String) context.getText(R.string.updatingCalendar) + ": " + myCalendars.get(calendarId),
 					ProgressDialog.STYLE_SPINNER);
 
@@ -497,7 +499,7 @@ public class HebrewEventsFragment extends ListFragment {
 
 	private void updateMyCalendars() {
 		try {
-			HebrewCalendarUtils.updateCalendar(contentResolver, context, calendarId, events, reminderMinutes);
+			HebrewCalendarUtils.updateCalendar(contentResolver, context, calendarId, events, reminderMinutes,forYears);
 			Thread.sleep(100);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
