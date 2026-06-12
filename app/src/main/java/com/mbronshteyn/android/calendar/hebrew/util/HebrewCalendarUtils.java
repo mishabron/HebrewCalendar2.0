@@ -257,18 +257,16 @@ public class HebrewCalendarUtils {
 						description = getMonthName(context, newhDate.getHebrewMonth()) + " " + newhDate.getDay();
 					}
 				} else {
-					Date savedGrDate = hEvent.getGrDate();
-					int hYear = DateConverter.getTodayHebrewDate().getYear();
-					for (int nextYear = 0; nextYear <= forYears; nextYear++) {;
+					int currentYear = DateConverter.getTodayHebrewDate().getYear();
+					for (int nextYear = 0; nextYear <= forYears; nextYear++) {
                         try {
-                            hEvent.setGrDate(hYear+nextYear, hEvent.getMonth(), hEvent.getDay());
+                            HebrewDate hebDate = new HebrewDate(currentYear+nextYear, hEvent.getMonth(), hEvent.getDay());
+                            calendar.setTime(DateConverter.getGregorianDate(hebDate));
+							insertIvent(calendarBase, cr, calId, title, description, calendar.getTime(), reminderMinutes);
                         } catch (HebrewDateException e) {
                             throw new RuntimeException(e);
                         }
-                        calendar.setTime(hEvent.getGrDate());
-						insertIvent(calendarBase, cr, calId, title, description, calendar.getTime(), reminderMinutes);
 					}
-					hEvent.setGrDate(savedGrDate);
 				}
 			}
 		}
