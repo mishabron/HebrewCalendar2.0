@@ -129,16 +129,6 @@ public class HebrewCalendarEvent {
 		return grDate;
 	}
 
-	public Date getGrDateNextYear(int nextYear) {
-        Date nextyearGrDate = null;
-        try {
-            nextyearGrDate = DateConverter.getGregorianDateFutureYear(getHebDate(),nextYear);
-        } catch (HebrewDateException e) {
-            throw new RuntimeException(e);
-        }
-        return nextyearGrDate;
-	}
-
 	public void setGrDate(Date grDate) {
 		this.grDate = grDate;
 	}

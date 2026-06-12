@@ -55,18 +55,6 @@ public class DateConverter {
 		
 	}
 
-	public static Date getGregorianDateFutureYear(HebrewDate hDate, int nextYear){
-
-		Date retDate = null;
-
-		int absDate = CalendarUtils.absoluteFromHebrew(hDate.getMonth(), hDate.getDay(), hDate.getYear()+nextYear);
-
-		retDate =  CalendarUtils.gregorianFromAbsolute(absDate);
-
-		return retDate;
-
-	}
-
 	public static HebrewDate getTodayHebrewDate(){
 		return getHebrewDate(new Date());
 	}

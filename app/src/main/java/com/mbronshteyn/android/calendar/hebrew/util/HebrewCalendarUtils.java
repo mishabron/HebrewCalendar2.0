@@ -15,6 +15,7 @@ import com.mbronshteyn.calendar.hebrew.DateConverter;
 import com.mbronshteyn.calendar.hebrew.HebrewDate;
 import com.mbronshteyn.calendar.hebrew.data.HebrewEvent;
 import com.mbronshteyn.calendar.hebrew.data.HebrewMonth;
+import com.mbronshteyn.calendar.hebrew.exceptions.HebrewDateException;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -256,9 +257,18 @@ public class HebrewCalendarUtils {
 						description = getMonthName(context, newhDate.getHebrewMonth()) + " " + newhDate.getDay();
 					}
 				} else {
-					for (int nextYear = 0; nextYear <= forYears; nextYear++) {
-						insertIvent(calendarBase, cr, calId, title, description, hEvent.getGrDateNextYear(nextYear), reminderMinutes);
+					Date savedGrDate = hEvent.getGrDate();
+					int hYear = DateConverter.getTodayHebrewDate().getYear();
+					for (int nextYear = 0; nextYear <= forYears; nextYear++) {;
+                        try {
+                            hEvent.setGrDate(hYear+nextYear, hEvent.getMonth(), hEvent.getDay());
+                        } catch (HebrewDateException e) {
+                            throw new RuntimeException(e);
+                        }
+                        calendar.setTime(hEvent.getGrDate());
+						insertIvent(calendarBase, cr, calId, title, description, calendar.getTime(), reminderMinutes);
 					}
+					hEvent.setGrDate(savedGrDate);
 				}
 			}
 		}
